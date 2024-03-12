@@ -20,9 +20,32 @@
     backdrop-filter: blur(20px);
     border: solid 2px white;
     width: 60%;
+    max-height: 500px;
+    overflow-y: scroll;
     border-radius: 25px;
     padding: 20px;
+    z-index: 5;
 }
+//ลูกกลิ้ง
+.box::-webkit-scrollbar{
+    
+    width: 8px;
+    border-radius: 25px;
+}
+.box::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px  rgba(0,0,0,0.3);
+    visibility: hidden;
+}
+.box::-webkit-scrollbar-thumb{
+    background-color: rgb(138, 138, 132,0.3);
+    outline: none;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.box:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
 .wrapper{
     display: flex;
     align-items: center;
@@ -32,21 +55,23 @@
     padding: 20px;
     box-shadow: 0 4px 12px rgba(255, 47, 47, 0.315);
     margin: 10px;
-    
+
 }
 .rank-header{
     position: absolute;
-    left: 0;
-    top: -60px;
+    left: 250px;
+    top: 85px;
     display: flex;
     align-items: center;
     background: white;
-    width: 35%;
+    width: 30%;
     text-align: center;
     border-left: 5px solid rgba(0, 0, 0, 0.315);
     border-bottom: 5px solid rgba(0, 0, 0, 0.315);;
     border-radius: 20px;
     padding: 20px;
+    z-index: 10;
+  
 }
 .rank-header mat-icon{
     padding-right: 40px;
