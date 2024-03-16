@@ -42,6 +42,7 @@ main{
     outline: none;
     border: none;
 }
+//
 .grid{
     margin-top: 10px;
     display: grid;
@@ -95,8 +96,7 @@ main{
     max-width: 1rf;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease; 
 }
 // .grid img:hover {
 //     transform: scale(1.1);
@@ -170,7 +170,7 @@ a{
     color: white;
     border-radius: 10px;
 }
-
+// input
 .wrapper{
     width: 420px;
     background: rgb(145, 145, 238);
@@ -258,6 +258,8 @@ a{
 .register-link p a:hover{
     text-decoration: none;
 }
+// End of input
+// registration
 .wrapper-re{
     background: #e0224c;
     border-radius: 10px;
@@ -310,4 +312,4 @@ a{
     transform: translateY(-50%);
     font-size: 20px;
 }
-
+// end of registration
